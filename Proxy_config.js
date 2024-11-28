@@ -21,7 +21,7 @@ RENAME:
   groupBy: flag
   
 HK:
-  name: "{F} 𝗛𝗞 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
+  name: "{F} 𝗩𝗜𝗡𝗔 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
   font:
     type: sans-serif-bold
   sorts:
