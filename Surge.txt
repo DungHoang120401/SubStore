@@ -1,0 +1,45 @@
+#!MANAGED-CONFIG https://sub.store/api/file/Surge interval=86400 strict=true
+
+[General]
+loglevel = notify
+include-all-networks = true
+include-apns = true
+wifi-assist = false
+allow-wifi-access = true
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
+exclude-simple-hostnames = true
+ipv6 = false
+ipv6-vif = auto
+test-timeout = 1
+proxy-test-url = http://www.gstatic.com/generate_204
+allow-hotspot-access = true
+udp-priority = true
+dns-server = system
+compatibility-mode = 1
+show-error-page-for-reject = true
+encrypted-dns-follow-outbound-mode = true
+encrypted-dns-skip-cert-verification = true
+allow-dns-svcb = true
+http-api = 0000@0.0.0.0:6868
+http-api-web-dashboard = true
+http-api-tls = false
+udp-policy-not-supported-behaviour = DIRECT
+
+[Proxy Group]
+
+[Rule]
+DOMAIN-SET,https://github.com/lonely0811/Surge/raw/main/Rule/DADB.conf,REJECT-TINYGIF
+AND,((OR,((RULE-SET,https://github.com/lonely0811/Surge/raw/main/Rule/SADB.conf), (RULE-SET,https://github.com/lonely0811/Surge/raw/main/Rule/GADB.conf), (RULE-SET,https://github.com/lonely0811/Surge/raw/main/Rule/AADB.conf)))),REJECT-TINYGIF
+DOMAIN-SET,https://github.com/lonely0811/Surge/raw/main/Rule/DADB.conf,REJECT-DROP,extended-matching
+AND,((OR,((RULE-SET,https://github.com/lonely0811/Surge/raw/main/Rule/SADB.conf)))),REJECT-DROP
+FINAL,𝐍𝐨𝐛𝐢𝐭𝐚 𝐏𝐫𝐨𝐦𝐚𝐱
+
+[MITM]
+skip-server-cert-verify = true
+h2 = true
+hostname = testflight.apple.com, spclient.wg.spotify.com, *.googlevideo.com, s.youtube.com, www.youtube.com, www.googleapis.com, youtubei.googleapis.com
+ca-passphrase = 0A4B3F0B
+ca-p12 = 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
