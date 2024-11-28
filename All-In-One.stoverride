@@ -1,0 +1,70 @@
+name: All In One
+desc: Nobita MOD CSA
+icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/VIP.png
+http:
+  mitm:
+    - "sub.store"
+    - "-redirector*.googlevideo.com"
+    - "*.googlevideo.com"
+    - "www.youtube.com"
+    - "s.youtube.com"
+    - "youtubei.googleapis.com"
+    - "spclient.wg.spotify.com"
+    - "api-mobile.soundcloud.com"
+  script:
+  #Sub-Store
+    - match: ^https?:\/\/sub\.store
+      name: Sub-Store
+      type: request
+      require-body: true
+      timeout: 10
+  #Youtube Premium
+    - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)
+      name: Youtube1
+      type: response
+      require-body: true
+      binary-mode: true
+      timeout: 10
+    - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch)
+      name: Youtube2
+      type: request
+      require-body: true
+      binary-mode: true
+      timeout: 10
+  #Spotify Premium
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
+      name: Spotify1
+      type: request
+      require-body: false
+      timeout: 10
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
+      name: Spotify2
+      type: response
+      require-body: true
+      binary-mode: true
+      timeout: 10
+  #SoundCloudGo+
+    - match: https://api-mobile.soundcloud.com/configuration/ios
+      name: SoundCloudGo+
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Sub-Store:
+    url: https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+    interval: 86400
+  Youtube1:
+    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.preview.js
+    interval: 86400
+  Youtube2:
+    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.preview.js
+    interval: 86400
+  Spotify1:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+    interval: 86400
+  Spotify2:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+    interval: 86400
+  SoundCloudGo+:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+    interval: 86400
