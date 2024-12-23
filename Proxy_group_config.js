@@ -17,7 +17,7 @@ default:
   img-url: https://cdn0.iconfinder.com/data/icons/awards-6/500/award_achievement-1024.png
 𝐕𝐢𝐧𝐚 𝐏𝐫𝐨𝐦𝐚𝐱:
   type: select surge:smart
-  sources: [VINAPHONE]
+  sources: [VINA-PREMIUM]
   hidden: false
   img-url: https://cdn1.iconfinder.com/data/icons/vote-reward-7/24/award_reward_stars_star_rating_five-1024.png
 𝐀𝐥𝐥 𝐒𝐞𝐯𝐞𝐫:
