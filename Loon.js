@@ -1,10 +1,11 @@
 [General]
+ip-mode = ipv4-only
 disconnect-on-policy-change = true
 mitm-on-wifi-access = true
 disable-stun = true
 fast-switch = false
 ipv6 = false
-dns-server = system,
+dns-server = system
 allow-wifi-access = true
 wifi-access-http-port = 1082
 wifi-access-socks5-port = 6153
