@@ -45,7 +45,7 @@ default:
   hidden: false
   img-url: https://cdn3.iconfinder.com/data/icons/shirt-world-flags-1/64/shirt_world_flags-17-1024.png
 𝐋𝐨𝐚𝐝 𝐁𝐚𝐥𝐚𝐧𝐜𝐞:
-  type: load-balance surge: load-balance
+  type: loadbalance surge:loadbalance
   regex: /🇻🇳/
   sources: [PROMAX]
   hidden: false
