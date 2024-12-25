@@ -14,7 +14,6 @@ default:
     - 𝐕𝐢𝐞̣̂𝐭 𝐍𝐚𝐦
     - 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞
     - 𝐉𝐚𝐩𝐚𝐧
-    - 𝐋𝐨𝐚𝐝 𝐁𝐚𝐥𝐚𝐧𝐜𝐞
   img-url: https://cdn0.iconfinder.com/data/icons/awards-6/500/award_achievement-1024.png
 𝐕𝐢𝐧𝐚 𝐏𝐫𝐨𝐦𝐚𝐱:
   type: select surge:smart
@@ -44,9 +43,3 @@ default:
   sources: [PROMAX]
   hidden: false
   img-url: https://cdn3.iconfinder.com/data/icons/shirt-world-flags-1/64/shirt_world_flags-17-1024.png
-𝐋𝐨𝐚𝐝 𝐁𝐚𝐥𝐚𝐧𝐜𝐞:
-  type: load-balance surge:load-balance
-  regex: /🇻🇳/
-  sources: [PROMAX]
-  hidden: false
-  img-url: https://cdn3.iconfinder.com/data/icons/rawan/512/Laures2-1024.png
