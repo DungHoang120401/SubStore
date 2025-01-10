@@ -23,5 +23,5 @@ mitm:
   ca_passphrase: egern
 modules:
 - name: 𝘼𝙡𝙡 𝙄𝙣 𝙊𝙣𝙚
-  url: https://raw.githubusercontent.com/DungHoang120401/SubStore/refs/heads/Main/All_In_One.sgmodule
+  url: https://raw.githubusercontent.com/DungHoang120401/SubStore/refs/heads/Main/All_In_One_Egern.sgmodule
   enabled: true
