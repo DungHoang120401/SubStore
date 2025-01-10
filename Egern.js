@@ -1,10 +1,13 @@
 ipv6: false
+http_port: 1082
+socks_port: 3090
 allow_external_connections: true
 vif_only: true
+proxy_latency_test_url: http://www.gstatic.com/generate_204
+direct_latency_test_url: http://www.gstatic.com/generate_204
 include_all_networks: true
 include_apns: true
 dns: {}
-proxies:
 
 policy_groups:
 
@@ -12,9 +15,6 @@ rules:
 - rule_set:
     match: https://github.com/lonely0811/olsd/raw/main/Egern/Rule/ADBEGERN.yaml
     policy: REJECT
-- ssid:
-    match: '*'
-    policy: DIRECT
 - default:
     policy: 𝐀𝐮𝐭𝐨 𝐒𝐞𝐥𝐞𝐜𝐭
 mitm:
