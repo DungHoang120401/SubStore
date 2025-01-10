@@ -22,6 +22,9 @@ mitm:
   ca_p12: egern.p12
   ca_passphrase: egern
 modules:
-- name: 𝘼𝙡𝙡 𝙄𝙣 𝙊𝙣𝙚
-  url: https://raw.githubusercontent.com/DungHoang120401/SubStore/refs/heads/Main/All_In_One_Egern.sgmodule
+- name: SubStore
+  url: https://raw.githubusercontent.com/DungHoang120401/SubStore/refs/heads/Main/SubStore.sgmodule
+  enabled: true
+- name: Youtube Premium
+  url: https://raw.githubusercontent.com/DungHoang120401/SubStore/refs/heads/Main/Youtube.sgmodule
   enabled: true
