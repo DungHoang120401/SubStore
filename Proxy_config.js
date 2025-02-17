@@ -27,3 +27,8 @@ HK:
   sorts:
     - "flag:🇭🇰:first"
   groupBy: flag
+FREE:
+  name: "{F} 𝗙𝗥𝗘𝗘 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
+  font:
+    type: sans-serif-bold
+  groupBy: flag
