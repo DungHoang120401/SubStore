@@ -20,7 +20,7 @@ RENAME:
     - "flag:🇻🇳:first"
   groupBy: flag
   
-HK:
+VINA:
   name: "{F} 𝗩𝗜𝗡𝗔 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
   font:
     type: sans-serif-bold
@@ -31,4 +31,5 @@ FREE:
   name: "{F} 𝗙𝗥𝗘𝗘 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
   font:
     type: sans-serif-bold
+  ips: 103
   groupBy: flag
