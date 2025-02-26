@@ -4,7 +4,7 @@ default:
     
 VIEFAST:
   regex: /(🇻🇳|🇸🇬|🇯🇵|🇭🇰|🇹🇼)/i
-  name: "{F} {F:NAME} ({0#}) "
+  name: "{F} {F:NAME} {0#} "
   font:
     type: sans-serif-bold
   sorts:
@@ -12,23 +12,17 @@ VIEFAST:
   groupBy: flag
   
 RENAME:
-  name: "{F} {F:NAME} ({0#}) "
+  name: "{F} {F:NAME} {0#} "
   font:
     type: sans-serif-bold
   sorts:
     - "flag:🇻🇳:first"
   groupBy: flag
   
-VINA:
-  name: "{F} 𝗩𝗜𝗡𝗔 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
-  font:
-    type: sans-serif-bold
-  sorts:
-    - "flag:🇭🇰:first"
-  groupBy: flag
 FREE:
   name: "{F} 𝗙𝗥𝗘𝗘 𝗣𝗥𝗢𝗠𝗔𝗫 ({0#}) "
+  ips: [103.0.0.0/8]
+  sni: data.viettel.vn
   font:
     type: sans-serif-bold
-  ips: 103
   groupBy: flag
