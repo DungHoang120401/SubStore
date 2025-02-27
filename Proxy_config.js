@@ -1,4 +1,5 @@
 default:
+  sni: v9.tiktokcdn.com
   font:
     type: sans-serif-bold
     
