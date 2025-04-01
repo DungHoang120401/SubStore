@@ -28,7 +28,7 @@ default:
   img-url: https://cdn3.iconfinder.com/data/icons/shirt-world-flags-1/64/shirt_world_flags-55-1024.png
 𝐇𝐊 & 𝐓𝐖:
   type: url-test surge:smart
-  regex: /HK|TW/
+  regex: /🇭🇰|🇹🇼/
   sources: [PROMAX]
   hidden: false
   img-url: https://cdn3.iconfinder.com/data/icons/shirt-world-flags-1/64/shirt_world_flags-40-1024.png
