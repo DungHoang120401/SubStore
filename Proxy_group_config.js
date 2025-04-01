@@ -11,6 +11,7 @@ default:
   proxies:
     - 𝐀𝐥𝐥 𝐒𝐞𝐯𝐞𝐫
     - 𝐕𝐢𝐞̣̂𝐭 𝐍𝐚𝐦
+    - 𝐇𝐊 & 𝐓𝐖
     - 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞
     - 𝐉𝐚𝐩𝐚𝐧
   img-url: https://cdn0.iconfinder.com/data/icons/awards-6/500/award_achievement-1024.png
@@ -25,6 +26,12 @@ default:
   sources: [PROMAX]
   hidden: false
   img-url: https://cdn3.iconfinder.com/data/icons/shirt-world-flags-1/64/shirt_world_flags-55-1024.png
+𝐇𝐊 & 𝐓𝐖:
+  type: url-test surge:smart
+  regex: /HK|TW/
+  sources: [PROMAX]
+  hidden: false
+  img-url: https://cdn3.iconfinder.com/data/icons/shirt-world-flags-1/64/shirt_world_flags-40-1024.png
 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞:
   type: url-test surge:smart
   regex: /🇸🇬/
