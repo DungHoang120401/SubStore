@@ -43,7 +43,6 @@ SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/confi
 #Revenuecat
 #hostname = api.revenuecat.com
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
-
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/LKG_delete_header.js, timeout=60
 #************************************#
 
@@ -56,16 +55,8 @@ Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v
 #hostname = ap*.intsig.net
 Camscanner = requires-body=1,script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/camscanner.js,type=http-response,pattern= https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop
 
-#WinK
-#hostname = api-sub.meitu.com
-wink = type=http-response,pattern=^https:\/\/api-sub\.meitu\.com\/v\d\/user\/vip_info_by_group,requires-body=1,max-size=0,script-path=http://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/wink.js
-
-#Speed_Test_Master
-#hostname = iap.etm.tech
-SpeedTest=type=http-response,pattern=^https:\/\/iap\.etm\.tech\/receipts,requires-body=1,script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/Speed_Test_Master.js
-
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data=""
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, premium*.truecaller.com, sub.store, api.revenuecat.com, spclient.wg.spotify.com, api-mobile.soundcloud.com, ap*.intsig.net, api-sub.meitu.com, iap.etm.tech
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, premium*.truecaller.com, sub.store, api.revenuecat.com, spclient.wg.spotify.com, api-mobile.soundcloud.com, ap*.intsig.net
