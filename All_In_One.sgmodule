@@ -51,6 +51,11 @@ deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(
 Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/TrueCaller.js
 #************************************#
 
+#RoPhim RoX
+#hostname = api.rofilm.net
+http-response ^https?:\/\/api\.rofilm\.net\/api\/app\/v1\/(?:auth\/(?:register|login)|user\/info)$ script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/rophim.js, requires-body=true, max-size=-1
+#************************************#
+
 #CamScanner
 #hostname = ap*.intsig.net
 Camscanner = requires-body=1,script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/main/Scripts/camscanner.js,type=http-response,pattern= https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop
